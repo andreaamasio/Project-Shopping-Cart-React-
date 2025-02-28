@@ -1,13 +1,13 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, NavLink } from "react-router-dom"
 const NavBar = () => {
   return (
     <>
       <div className="nav">
         <ul className="nav-list">
           <li>
-            <Link to="/">Home</Link>
-            <Link to="shop">Store</Link>
-            <Link to="cart">Cart</Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="shop">Store</NavLink>
+            <NavLink to="cart">Cart</NavLink>
           </li>
         </ul>
       </div>

@@ -4,15 +4,26 @@
   padding: 0;
 }
 .nav {
-  background-color: dimgrey;
+  background-color: rgb(44, 57, 48);
 }
 
 .nav-list * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: white;
   list-style: none;
   padding: 2rem;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+}
+li a.active {
+  background-color: rgb(63, 79, 68);
+}
+li a:hover {
+  background-color: rgb(162, 123, 92);
+}
+.main-shop {
+  background-color: rgb(220, 215, 201);
 }

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 const Shop = () => {
   return (
-    <div>
-      <p>I'm the Shop</p>
+    <div className="main-shop">
+      <div className="container">Shop</div>
     </div>
   )
 }

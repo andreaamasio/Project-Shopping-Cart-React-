@@ -7,12 +7,21 @@
 .nav {
   background-color: rgb(44, 57, 48);
 }
-.navList li {
+.navList {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
+  list-style: none;
 }
-.navList * {
+.navList li * {
+  font-size: 1.6rem;
+  color: white;
+
+  padding: 1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.navList ul {
   font-size: 1.6rem;
   color: white;
   list-style: none;
@@ -20,18 +29,28 @@
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
 .cartIcon {
-  width: 50px;
+  width: 100px;
   height: auto;
   display: block;
+}
+.cartIcon img {
+  width: 100%;
+  height: auto;
 }
 :global(.active) {
   background-color: rgb(63, 79, 68);
 }
-li a:hover {
+ul a:hover {
   /* background-color: rgb(162, 123, 92); */
   text-decoration: underline;
 }
 .main-shop {
+  background-color: rgb(220, 215, 201);
+}
+.outlet {
   background-color: rgb(220, 215, 201);
 }

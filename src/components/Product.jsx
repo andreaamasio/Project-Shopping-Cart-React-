@@ -7,7 +7,7 @@ const Product = ({ name, price, imgURL }) => {
       </div>
       <p>{name}</p>
       <p>${price}</p>
-      <button>Add to Cart</button>
+      <button className={styles.buy__button}>Add to Cart</button>
     </div>
   )
 }

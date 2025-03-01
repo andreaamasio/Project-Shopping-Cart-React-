@@ -1,3 +1,4 @@
+/* color palette https://colorhunt.co/palette/2c39303f4f44a27b5cdcd7c9 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,22 +8,23 @@
   background-color: rgb(44, 57, 48);
 }
 
-.nav-list * {
+.navList * {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
   color: white;
   list-style: none;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Noto Sans", sans-serif;
   text-decoration: none;
 }
-li a.active {
+:global(.active) {
   background-color: rgb(63, 79, 68);
 }
 li a:hover {
-  background-color: rgb(162, 123, 92);
+  /* background-color: rgb(162, 123, 92); */
+  text-decoration: underline;
 }
 .main-shop {
   background-color: rgb(220, 215, 201);

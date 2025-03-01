@@ -1,9 +1,10 @@
 import { Link, Outlet, NavLink } from "react-router-dom"
+import styles from "./NavBar.module.css"
 const NavBar = () => {
   return (
     <>
-      <div className="nav">
-        <ul className="nav-list">
+      <div className={styles.nav}>
+        <ul className={styles.navList}>
           <li>
             <NavLink to="/">Home</NavLink>
             <NavLink to="shop">Store</NavLink>

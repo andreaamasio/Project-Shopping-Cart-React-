@@ -1,10 +1,15 @@
 import { Link, Outlet, NavLink } from "react-router-dom"
+import { useState } from "react"
 import styles from "./NavBar.module.css"
 import cartIcon from "../assets/svg_cart.svg"
 
 const NavBar = () => {
-  console.log(cartIcon)
+  const [cartItems, setCartItems] = useState([])
 
+  const cartNumber =
+    cartItems.length > 0 ? (
+      <div className={styles.cartNumber}>{cartItems.length}</div>
+    ) : null
   return (
     <>
       <div className={styles.nav}>
@@ -17,16 +22,18 @@ const NavBar = () => {
           </li>
 
           <li>
-            <Link to="cart" className={styles.cartIcon}>
-              <span className={styles.cartIcon}>
+            <Link to="cart">
+              <div className={styles.cartIcon}>
                 <img src={cartIcon} alt="Cart" />
-              </span>
+
+                {cartNumber}
+              </div>
             </Link>
           </li>
         </ul>
       </div>
       <div className="outlet">
-        <Outlet />
+        <Outlet context={[cartItems, setCartItems]} />
       </div>
     </>
   )

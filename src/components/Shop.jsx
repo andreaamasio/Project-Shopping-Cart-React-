@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, useOutletContext } from "react-router-dom"
 import { useEffect, useState } from "react"
 import Product from "./Product"
 import styles from "./Shop.module.css"
 const Shop = () => {
+  const [cartItems, setCartItems] = useOutletContext()
   const [products, setProducts] = useState([])
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")

@@ -32,25 +32,39 @@
 a {
   text-decoration: none;
 }
-.cartIcon {
-  width: 100px;
-  height: auto;
-  display: block;
-}
-.cartIcon img {
-  width: 100%;
-  height: auto;
-}
+
 :global(.active) {
   background-color: rgb(63, 79, 68);
 }
-ul a:hover {
+ul li:nth-child(-n + 2) a:hover {
   /* background-color: rgb(162, 123, 92); */
   text-decoration: underline;
 }
+/* ul li:nth-child(-n + 2) */
 .main-shop {
   background-color: rgb(220, 215, 201);
 }
 .outlet {
   background-color: rgb(220, 215, 201);
+}
+div.cartNumber {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.cartIcon {
+  max-width: 100px;
+  height: auto;
+  display: flex;
+  padding: 0;
+}
+.cartIcon img {
+  width: 100%;
+  height: auto;
 }

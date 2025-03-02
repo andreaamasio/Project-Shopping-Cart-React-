@@ -5,3 +5,11 @@
   justify-content: space-around;
   align-items: center;
 }
+.noItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 1.6rem;
+}

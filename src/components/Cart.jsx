@@ -1,5 +1,5 @@
 import { Link, useOutletContext } from "react-router-dom"
-import { useEffect, useState } from "react"
+
 import ProductCart from "./ProductCart"
 import styles from "./Cart.module.css"
 const Cart = () => {
@@ -23,7 +23,7 @@ const Cart = () => {
       <div className={styles.container}>{productsComponents}</div>
     </div>
   ) : (
-    <div> No items in the Cart</div>
+    <div className={styles.noItemContainer}> No items in the Cart yet.</div>
   )
 }
 

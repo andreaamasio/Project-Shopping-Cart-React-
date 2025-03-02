@@ -37,10 +37,9 @@ a {
   background-color: rgb(63, 79, 68);
 }
 ul li:nth-child(-n + 2) a:hover {
-  /* background-color: rgb(162, 123, 92); */
   text-decoration: underline;
 }
-/* ul li:nth-child(-n + 2) */
+
 .main-shop {
   background-color: rgb(220, 215, 201);
 }

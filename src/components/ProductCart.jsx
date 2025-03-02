@@ -13,15 +13,17 @@ const ProductCart = ({ name, price, imgURL, id, quantity }) => {
     )
   }
   function removeFromCart(e) {
-    let productToRemoveId = e.target.id
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === productToRemoveId
-          ? { ...item, quantity: item.quantity - 1 }
-          : item
-      )
+    const productToRemoveId = e.target.id
+    console.log(productToRemoveId)
+    setCartItems((cartItems) =>
+      cartItems
+        .map((item) =>
+          item.id === productToRemoveId
+            ? { ...item, quantity: item.quantity - 1 }
+            : item
+        )
+        .filter((item) => item.quantity > 0)
     )
-    setCartItems(cartItems.filter((item) => item.quantity != 0))
   }
 
   return (
